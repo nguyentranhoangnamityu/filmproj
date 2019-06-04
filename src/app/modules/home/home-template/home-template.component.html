@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="subnav">
+    <a class="navbar-brand brand" href="#">NAMDEPTRAI</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse menu" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink='/' routerLinkActive="active">Trang chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/danhsachphim" routerLinkActive="active">Danh sách phim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dangnhap" routerLinkActive="active">Đăng nhập</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dangky" routerLinkActive="active">Đăng ký</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dangxuat" routerLinkActive="active">Đăng xuất</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dangnhapadmin" routerLinkActive="active">Admin</a>
+        </li>
+        <div class="icon-contact">
+          <li class="nav-item icon-facebook">
+            <i class="fab fa-facebook-square"></i>
+          </li>
+          <li class="nav-item icon-phone">
+            <i class="fas fa-phone-square"></i>
+          </li>
+          <li class="nav-item icon-google">
+            <i class="fab fa-google-plus-square"></i>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<app-slider></app-slider>
+<div class="main">
+  <router-outlet></router-outlet>
+</div>
+
+
+<footer class="bg-dark text-light text-center footer" style="padding:50px;">
+    <span> Design by Hoang Nam </span>  
+</footer>

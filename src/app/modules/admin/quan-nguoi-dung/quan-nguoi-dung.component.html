@@ -1,0 +1,21 @@
+<h3> Quản lí người dùng</h3>
+<table CELLSPACING="2px" border=1>
+  <tr>
+    <th>
+      Tài Khoản
+    </th>
+    <th>
+      Mật khẩu
+    </th>
+    <th>
+      Delete
+    </th>
+  </tr>
+  <tr *ngFor="let item of dsNguoiDung">
+      <td>{{item.TaiKhoan}}</td>
+      <td>{{item.MatKhau}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="XoaNguoiDung(item.TaiKhoan)">Delete</button>
+      </td>
+  </tr>
+</table>

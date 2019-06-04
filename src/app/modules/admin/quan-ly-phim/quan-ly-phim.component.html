@@ -1,0 +1,78 @@
+<!-- CAROUSEL -->
+<section class="slider">
+  <div class="carousel slide carousel-fade" data-ride="carousel" id="myCarousel">
+      <ol class="carousel-indicators justify-content-start">
+          <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+          <li data-slide-to="1" data-target="#myCarousel"></li>
+          <li data-slide-to="2" data-target="#myCarousel"></li>
+      </ol>
+      <div class="carousel-inner">
+          <div class="carousel-item active item1">
+
+              <div class="caption-carousel container">
+                  <span class="subtitle">ACTION, ADVENTURE, FANTASY</span>
+                  <h1 class="display-4 title">End of the World: Part I</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ratione nesciunt
+                      praesentium doloribus. Laborum ipsum, explicabo voluptatibus corrupti nesciunt possimus!
+                  </p>
+                  <div class="carousel-caption__trailer">
+                      <span>PG</span>
+                      <button class="btn-trailer">
+                          <span> <i class="fa fa-play"></i>PLAY TRAILER</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item item2">
+
+              <div class="caption-carousel container">
+                  <span class="subtitle">ACTION, ADVENTURE, FANTASY</span>
+                  <h1 class="display-4 title">End of the World: Part II</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ratione nesciunt
+                      praesentium doloribus. Laborum ipsum, explicabo voluptatibus corrupti nesciunt possimus!
+                  </p>
+                  <div class="carousel-caption__trailer">
+                      <span>PG</span>
+                      <button class="btn-trailer">
+                          <span> <i class="fa fa-play"></i>PLAY TRAILER</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+          <div class="carousel-item item3">
+
+              <div class="caption-carousel container">
+                  <span class="subtitle">ACTION, ADVENTURE, FANTASY</span>
+                  <h1 class="display-4 title">End of the World: Part III</h1>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi ratione nesciunt
+                      praesentium doloribus. Laborum ipsum, explicabo voluptatibus corrupti nesciunt possimus!
+                  </p>
+                  <div class="carousel-caption__trailer">
+                      <span>PG</span>
+                      <button class="btn-trailer">
+                          <span> <i class="fa fa-play"></i>PLAY TRAILER</span>
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- <a href="#myCarousel" class="carousel-control-next" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+      <a href="#myCarousel" class="carousel-control-prev" data-slide="prev"><span class="carousel-control-prev-icon"></span></a> -->
+  </div>
+</section>
+<!-- END CAROUSEL -->
+<h3 class="newin">NEW IN</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let item of dsPhim" style="padding:15px;"> 
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="{{item.HinhAnh}}" alt="{{item.TenPhim}}" width="150" height="250">
+        <div class="card-body">
+          <h5 class="card-title">{{item.TenPhim}}</h5>
+          <p class="card-text">{{item.MoTa | shortcut: 100}}</p>
+          <a href="#" class="btn" routerLink='/chitietphim' [queryParams]='{MaPhim:item.MaPhim,TenPhim:item.TenPhim}'>Xem chi tiết</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

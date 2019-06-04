@@ -1,0 +1,15 @@
+.outletcontainer{
+    display: flex;
+    justify-content: center;
+}
+#content-wrapper{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#wrapper #content-wrapper{
+    width: 30%;
+}

@@ -1,0 +1,15 @@
+<h3>Chỉnh sửa phim</h3>
+<table border=1>
+  <tr>
+    <th>Tên phim</th>
+    <th>Mã phim</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let item of dsPhim">
+    <td>{{item.TenPhim}}</td>
+    <td>{{item.MaPhim}}</td>
+    <td>
+      <button class="btn btn-danger" (click)="XoaPhim(item.MaPhim)">Delete</button>
+    </td>
+  </tr>
+</table>

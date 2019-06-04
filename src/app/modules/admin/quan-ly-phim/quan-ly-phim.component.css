@@ -1,0 +1,132 @@
+/* CAROUSEL */
+.slider .carousel-item{
+    height: 45rem;
+    background-size: cover;
+}
+.item1{
+    background-image: url(../../../../img/hero-1.jpg);
+}
+.item2{
+    background-image:url(../../../../img/hero-2.jpg);
+}
+.item3{
+    background-image: url(../../../../img/hero-3.jpg);
+}
+.caption-carousel{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    color: white;
+    transform: translate(-50%, -50%)
+}
+.caption-carousel > span{
+    color: #D7A658;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.caption-carousel p{
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+
+}
+.carousel-caption__trailer > span{
+    border: 1px solid white;
+    display: inline-block;
+    width:2rem;
+    height:2rem;
+    border-radius: 50%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.9rem;
+}
+.btn-trailer{
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 2.5rem;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.2rem;
+    border: none;
+    margin-left:0.5rem;
+    outline: none!important;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.btn-trailer i{
+    margin-right: 0.5rem;
+    z-index: 100;
+}
+.btn-trailer::after{
+    content:'';
+    display: block;
+    width: 200%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(236,117,50,0.7);
+    top:0; 
+    left:-210%;
+    transform: skewX(45deg);
+    transition: all 0.5s;
+}
+.btn-trailer:hover::after{
+    left:-10%;
+
+}
+.slider .carousel-indicators li{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    background:transparent;
+    border: 1px solid white;
+}
+.slider .carousel-indicators li.active{
+    background-color: white;
+}
+.btn-trailer span{
+    position: relative;
+    z-index: 100;
+}
+/* END CAROUSEL */
+.title{
+    font-size: 80px;
+}
+.caption-carousel .subtitle{
+    font-size: 35px;
+}
+.slider{
+    margin-bottom: 60px;
+}
+.newin {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    color: #ec7532;
+}
+.card-body{
+    display: flex;
+    justify-content: center!important;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    border: 20px solid rgba(240, 144, 117, 0.133);
+    border-radius: 10px;
+}
+.btn{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    border-radius: 20px;
+    border: 2px solid orange;
+}
+.btn:hover{
+    font-size: 20px;
+    font-weight: 300;
+    color: orange;
+    background: white;
+    border-radius: 20px;
+    border: 2px solid orange;
+}

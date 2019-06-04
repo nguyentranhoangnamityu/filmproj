@@ -1,0 +1,12 @@
+.themtitle{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: sans-serif;
+    color: darkorange;
+}
+td{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: sans-serif;
+}

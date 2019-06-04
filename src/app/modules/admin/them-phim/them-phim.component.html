@@ -1,0 +1,40 @@
+<h3 class="themtitle">Thêm phim</h3>
+<form #frmThemPhim="ngForm" (ngSubmit)="ThemPhim(frmThemPhim.value)">
+  <tr>
+    <td>Mã phim: </td>
+    <td> <input type="text" name="MaPhim" ngModel #maPhim='ngModel'></td>   
+  </tr>
+  <tr>
+    <td>Tên phim: </td>
+    <td><input type="text" name="TenPhim" ngModel #tenPhim='ngModel'></td>
+  </tr>
+  <tr>
+    <td>Trailer: </td>
+    <td><input type="text" name="Trailer" ngModel #traiLer='ngModel'></td>
+  </tr>
+  <tr>
+    <td>Mô tả: </td>
+    <td><input type="text" name="MoTa" ngModel #moTa='ngModel'></td>
+  </tr>
+  <tr>
+    <td>Mã nhóm: </td>
+    <td><input type="text" name="MaNhom" ngModel #maNhom='ngModel'></td>
+  </tr>
+  <tr>
+    <td>Ngày khởi chiếu: </td>
+    <td><input type="text" name="NgayKhoiChieu" ngModel #ngayKhoiChieu='ngModel'></td>
+  </tr>
+  <tr>
+    <td>Đánh giá: </td>
+    <td><input type="text" name="DanhGia" #danhGia='ngModel' ngModel></td>
+  </tr>
+  <tr>
+    <td>Hình ảnh: </td>
+    <td><input type="url" name="HinhAnh" #hinhAnh='ngModel' ngModel></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td><button class="btn btn-success" type="submit">Submit</button></td>
+  </tr>
+  
+</form>

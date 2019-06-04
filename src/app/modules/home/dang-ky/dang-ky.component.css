@@ -1,0 +1,47 @@
+input.ng-valid{
+    border-left:5px solid rgb(98, 240, 98);
+}
+input.ng-invalid{
+    border-left:5px solid rgb(238, 68, 68);
+}
+input.ng-valid{
+    border-left: 5px solid rgb(67, 241, 61);
+}
+
+input.ng-invalid{
+    border-left: 5px solid rgb(231, 32, 25);
+}
+.Signup{
+        text-align: center;
+        font-size: 60px;
+        font-weight: bold;
+        color: rgb(242, 145, 68);
+        margin-top: 50px;
+        margin-bottom: 40px;
+}
+.form-group{
+    font-size: 30px;
+    color: rgb(242, 145, 68);
+    font-weight: 300;
+}
+
+.content{
+   padding: 0 0 0 300px;
+}
+.btn{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    color: white;
+    font-weight: bold;
+    margin-left: 40%;
+    border: 2px solid #ec7532;
+   
+}
+.btn:hover{
+    background: #ffffff;
+    border: 2px solid #ec7532;
+    color: #ec7532;
+}
